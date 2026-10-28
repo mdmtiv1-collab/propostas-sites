@@ -1,0 +1,96 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paraiso do Sabor | Cardápio digital</title><meta name="description" content="Cardápio digital de Paraiso do Sabor. Sabor de verdade, feito com ingredientes frescos.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&family=Poppins:wght@500;600;700&family=Montserrat:wght@600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#0e7c86;--a:#f2b134;--d:#06353a;--tx:#1c1b1a;--mut:#6b6762;--bg:#faf8f5;--card:#fff;--fh:'Poppins',system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:90px}
+.wrap{max-width:860px;margin:auto;padding:0 18px}h1,h2,h3{font-family:var(--fh);margin:0;line-height:1.2}a{color:inherit}
+.demo{background:#111;color:#fff;font-size:.8rem;text-align:center;padding:9px 38px;position:relative}.demo b{color:var(--a)}.demo button{position:absolute;right:10px;top:4px;background:none;border:0;color:#fff;font-size:1.2rem;cursor:pointer}
+.hero{position:relative;color:#fff;background:linear-gradient(135deg,var(--p),var(--d))}.hero .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--d) 45%,transparent),color-mix(in srgb,var(--d) 94%,transparent))}
+.hero .wrap{position:relative;z-index:2;padding-top:56px;padding-bottom:30px}.logo{width:76px;height:76px;border-radius:22px;background:var(--a);color:#111;display:grid;place-items:center;font-family:var(--fh);font-size:2.2rem;font-weight:700;margin-bottom:16px;box-shadow:0 12px 28px -8px #0008}
+.hero h1{font-size:clamp(1.8rem,6vw,2.7rem)}.hero p{margin:8px 0 0;opacity:.92;max-width:560px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{background:#ffffff22;border:1px solid #ffffff3a;backdrop-filter:blur(8px);padding:5px 13px;border-radius:99px;font-size:.84rem}.chip b{color:#ffd45e}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:99px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:600}.btn.a{background:#25d366;color:#04260f}.btn.b{background:#fff;color:var(--d)}.btn.o{border:1.5px solid #fff8;color:#fff;background:transparent}
+nav.cats{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid #0001}nav.cats .wrap{display:flex;gap:8px;overflow-x:auto;padding-top:11px;padding-bottom:11px;scrollbar-width:none}nav.cats a{white-space:nowrap;text-decoration:none;font-weight:600;font-size:.88rem;padding:8px 15px;border-radius:99px;background:#fff;border:1px solid #0001;color:var(--tx)}nav.cats a:hover,nav.cats a.on{background:var(--p);color:#fff;border-color:var(--p)}
+.cat{padding:30px 0 4px}.cphoto{height:150px;border-radius:20px;background:#ddd center/cover no-repeat;position:relative;overflow:hidden;margin-bottom:14px}.cphoto:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--d) 80%,transparent),transparent 75%)}.ctitle{position:absolute;z-index:2;left:20px;bottom:16px;color:#fff;font-size:1.6rem}
+.mis{display:grid;gap:10px}.mi{display:flex;gap:14px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid #0000000f;border-radius:16px;padding:15px 16px;box-shadow:0 2px 10px -6px #0003}
+.mi-n{font-size:1.02rem}.mi-d{margin:3px 0 7px;color:var(--mut);font-size:.88rem}.mi-p{font-weight:700;color:var(--p)}
+.add{flex:none;width:42px;height:42px;border-radius:50%;border:0;background:var(--p);color:#fff;font-size:1.5rem;line-height:1;cursor:pointer;box-shadow:0 8px 18px -8px var(--p);transition:.15s}.add:hover{transform:scale(1.08)}.add.ok{background:#16a34a;transform:scale(1.2)}
+.lay-cards .mis{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.lay-cards .mi{flex-direction:column;align-items:stretch;justify-content:space-between;gap:12px}.lay-cards .mi .add{align-self:flex-end}.lay-cards .mi-t{flex:1}
+.info{padding:38px 0}.info h2{font-size:1.5rem;margin-bottom:14px}.info ul{list-style:none;padding:0;margin:8px 0;color:var(--mut);font-size:.92rem}.info .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.info iframe{width:100%;height:100%;min-height:260px;border:0;border-radius:18px}.info small{display:block;color:var(--p);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.7rem;margin-bottom:3px}.info .blk{margin-bottom:16px}
+footer{background:#161412;color:#a8a39b;text-align:center;padding:30px 18px;font-size:.85rem}footer b{color:#fff}
+#cartbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;max-width:620px;margin:auto;background:var(--p);color:#fff;border:0;border-radius:18px;padding:15px 20px;display:none;justify-content:space-between;align-items:center;font:inherit;font-weight:600;cursor:pointer;box-shadow:0 16px 36px -10px #0009}
+#sheet{position:fixed;inset:0;z-index:60;background:#0008;display:none;align-items:flex-end;justify-content:center}#sheet.on{display:flex}#sheet .box{background:#fff;width:100%;max-width:620px;border-radius:24px 24px 0 0;padding:22px;max-height:88vh;overflow:auto}
+#sheet h3{font-size:1.2rem;margin-bottom:12px}.ln{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px solid #0001}.ln span.n{flex:1}.q{display:flex;align-items:center;gap:8px}.q button{width:30px;height:30px;border-radius:50%;border:1px solid #0002;background:#fff;font-size:1.1rem;cursor:pointer}.tot{display:flex;justify-content:space-between;font-weight:700;font-size:1.1rem;padding:14px 0}
+.sendw{width:100%;justify-content:center;background:#25d366;color:#04260f;padding:15px;border-radius:14px}.close{float:right;background:none;border:0;font-size:1.6rem;cursor:pointer}
+.nowa .add{display:none}
+button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.mi-img{width:88px;height:88px;border-radius:14px;object-fit:cover;flex:none}.lay-cards .mi .mi-img{width:100%;height:150px}
+.cphoto.np{height:92px;background:linear-gradient(135deg,var(--p),var(--d))}.cphoto.np:after{display:none}
+.field{display:block;margin-top:12px;font-size:.78rem;color:#6b6762;font-weight:600}.field input,.field select,.field textarea{display:block;width:100%;margin-top:4px;padding:12px;border:1px solid #0003;border-radius:12px;font:inherit;font-size:1rem;background:#fff;color:#1c1b1a}
+.seg{display:flex;gap:8px;margin-top:4px}.seg button{flex:1;padding:12px;border-radius:12px;border:1.5px solid #0003;background:#fff;font:inherit;font-weight:600;cursor:pointer}.seg button.on{border-color:var(--p);background:color-mix(in srgb,var(--p) 10%,#fff);color:var(--p)}
+body.modo-salao .add,body.modo-salao #cartbar,body.modo-salao #sheet,body.modo-salao .only-del{display:none!important}body.modo-delivery .only-sal{display:none!important}
+.sendw{margin-top:16px}
+@media(max-width:700px){.info .grid{grid-template-columns:1fr}.hero .wrap{padding-top:44px}}
+</style></head><body class="lay-cards modo-delivery" data-lay="cards">
+<div class="demo" id="demo">🍽️ <b>Cardápio de exemplo</b> criado especialmente para Paraiso do Sabor. Itens, fotos e preços são ilustrativos e serão trocados pelos do seu restaurante.<button onclick="document.getElementById('demo').remove()" aria-label="Fechar">×</button></div>
+<header class="hero" id="top" data-sec="Abertura"><div class="bg" style="background-image:url('foto1.jpg')"></div><div class="wrap">
+<div class="logo">P</div><h1>Paraiso do Sabor</h1><p>Sabor de verdade, feito com ingredientes frescos.</p>
+<div class="chips"><span class="chip">Restaurante · Alto Paraíso</span><span class="chip"><b>★★★★☆</b> 4,4 no Google (28)</span></div>
+<div class="cta"><a class="btn a only-del" href="https://wa.me/5541987844883?text=Ol%C3%A1!%20Vi%20o%20card%C3%A1pio%20digital%20de%20voc%C3%AAs%20e%20gostaria%20de%20fazer%20um%20pedido.">💬 Fazer pedido no WhatsApp</a><a class="btn a only-sal" href="tel:41987844883">📞 Ligar</a><a class="btn o" href="#info">📍 Como chegar</a></div></div></header>
+<nav class="cats" id="catnav"><div class="wrap"><a href="#c0-entradas">Entradas</a><a href="#c1-pratos-principais">Pratos principais</a><a href="#c2-sobremesas">Sobremesas</a><a href="#c3-bebidas">Bebidas</a></div></nav>
+<section class="cat" id="c0-entradas" data-sec="Entradas"><div class="wrap">
+  <div class="cphoto" style="background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&amp;fit=crop&amp;w=900&amp;q=75')"><h2 class="ctitle">Entradas</h2></div>
+  <div class="mis"><div class="mi"><div class="mi-t"><h3 class="mi-n">Bruschetta</h3><p class="mi-d">Tomate, manjericão e azeite</p><div class="mi-p">R$ 24,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Salada da casa</h3><p class="mi-d">Folhas frescas e molho especial</p><div class="mi-p">R$ 22,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Porção de batata</h3><p class="mi-d">Crocante, para dividir</p><div class="mi-p">R$ 26,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div></div></div></section>
+<section class="cat" id="c1-pratos-principais" data-sec="Pratos principais"><div class="wrap">
+  <div class="cphoto" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=900&amp;q=75')"><h2 class="ctitle">Pratos principais</h2></div>
+  <div class="mis"><div class="mi"><div class="mi-t"><h3 class="mi-n">Filé grelhado</h3><p class="mi-d">Com arroz, legumes e batata</p><div class="mi-p">R$ 49,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Massa da casa</h3><p class="mi-d">Molho artesanal e parmesão</p><div class="mi-p">R$ 39,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Prato do dia</h3><p class="mi-d">Pergunte pelo chef</p><div class="mi-p">R$ 34,90</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div></div></div></section>
+<section class="cat" id="c2-sobremesas" data-sec="Sobremesas"><div class="wrap">
+  <div class="cphoto" style="background-image:url('https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&amp;fit=crop&amp;w=900&amp;q=75')"><h2 class="ctitle">Sobremesas</h2></div>
+  <div class="mis"><div class="mi"><div class="mi-t"><h3 class="mi-n">Pudim de leite</h3><p class="mi-d">Calda de caramelo</p><div class="mi-p">R$ 14,00</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Mousse de chocolate</h3><p class="mi-d">Cremoso e intenso</p><div class="mi-p">R$ 15,00</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div></div></div></section>
+<section class="cat" id="c3-bebidas" data-sec="Bebidas"><div class="wrap">
+  <div class="cphoto" style="background-image:url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&amp;fit=crop&amp;w=900&amp;q=75')"><h2 class="ctitle">Bebidas</h2></div>
+  <div class="mis"><div class="mi"><div class="mi-t"><h3 class="mi-n">Refrigerante lata</h3><p class="mi-d">350 ml, gelado</p><div class="mi-p">R$ 7,00</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Suco natural</h3><p class="mi-d">Laranja, limão ou maracujá, 400 ml</p><div class="mi-p">R$ 11,00</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Água mineral</h3><p class="mi-d">Com ou sem gás</p><div class="mi-p">R$ 4,50</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div><div class="mi"><div class="mi-t"><h3 class="mi-n">Cerveja long neck</h3><p class="mi-d">Consulte as marcas disponíveis</p><div class="mi-p">R$ 12,00</div></div><button class="add" aria-label="Adicionar ao pedido">+</button></div></div></div></section>
+<section class="info" id="info" data-sec="Informações"><div class="wrap"><h2>Informações</h2><div class="grid"><div>
+
+<div class="blk only-del"><small>Entrega e pagamento</small>Entregamos na região. Taxa de entrega, pedido mínimo e formas de pagamento: combine pelo WhatsApp.</div>
+<div class="blk"><small>Endereço</small>R. Rio Guaporé, 1400 - Bairro Alto, Curitiba - PR, 82840-210</div><div class="blk"><small>Telefone</small>(41) 98784-4883</div><div class="blk"><small>Horários</small><ul><li>segunda-feira: 07:00 – 14:00</li><li>terça-feira: 07:00 – 20:00</li><li>quarta-feira: 07:00 – 19:00</li><li>quinta-feira: 07:00 – 21:00</li><li>sexta-feira: 07:00 – 21:00</li><li>sábado: 07:00 – 20:00</li><li>domingo: 08:00 – 18:00</li></ul></div>
+<div class="blk"><a class="btn b" style="background:var(--p);color:#fff" href="https://maps.google.com/?cid=10726917692659228702&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA">⭐ Ver avaliações no Google</a></div></div>
+<iframe loading="lazy" src="https://maps.google.com/maps?q=Paraiso%20do%20Sabor%20R.%20Rio%20Guapor%C3%A9%2C%201400%20-%20Bairro%20Alto%2C%20Curitiba%20-%20PR%2C%2082840-210&output=embed"></iframe></div></div></section>
+<footer><b>Paraiso do Sabor</b><br>Cardápio digital · Alto Paraíso · © 2026 · Exemplo de demonstração</footer>
+<button id="cartbar"><span id="cn">0 itens</span><span id="ct">Ver pedido · R$ 0,00</span></button>
+<div id="sheet"><div class="box"><button class="close" id="sx" aria-label="Fechar">×</button><h3>Seu pedido</h3><div id="lines"></div><div class="tot"><span>Total dos itens</span><span id="tt">R$ 0,00</span></div><div class="seg" id="seg"><button data-t="Entrega" class="on">🛵 Entrega</button><button data-t="Retirada">🏪 Retirada</button></div><label class="field">Seu nome<input id="fn" autocomplete="name" placeholder="Como podemos te chamar?"></label><label class="field" id="fa">Endereço de entrega<input id="fe" autocomplete="street-address" placeholder="Rua, número e bairro"></label><label class="field">Forma de pagamento<select id="fp"><option>A combinar pelo WhatsApp</option><option>Pix</option><option>Cartão (maquininha na entrega)</option><option>Dinheiro</option></select></label><label class="field">Observações<textarea id="fo" rows="2" placeholder="Ex.: sem cebola, troco para R$ 100"></textarea></label><a class="btn sendw" id="send" href="#">💬 Enviar pedido no WhatsApp</a><p style="color:#6b6762;font-size:.8rem;margin:10px 0 0;text-align:center">O restaurante confirma o pedido e o valor da entrega pelo WhatsApp. Seu nome e endereço ficam salvos só neste celular, para o próximo pedido.</p></div></div>
+<script>
+(function(){
+var WA='5541987844883',cart={},LF=String.fromCharCode(10),tipo='Entrega';
+var $=function(i){return document.getElementById(i)};
+var money=function(v){return 'R$ '+v.toFixed(2).replace('.',',')};
+var parse=function(t){return parseFloat(String(t).replace(/[^\d,]/g,'').replace(',','.'))||0};
+var editing=function(){return !!document.querySelector('[data-editor]')};
+function build(){var k=Object.keys(cart),t=0;k.forEach(function(x){t+=cart[x].q*cart[x].p});
+ var msg='Olá! Gostaria de fazer um pedido:'+LF+LF+k.map(function(x){return cart[x].q+'x '+x+' - '+money(cart[x].q*cart[x].p)}).join(LF)+LF+LF+'Total dos itens: '+money(t)+LF+LF+'Nome: '+$('fn').value.trim()+LF+'Tipo: '+tipo+(tipo==='Entrega'?LF+'Endereço: '+$('fe').value.trim():'')+LF+'Pagamento: '+$('fp').value+($('fo').value.trim()?LF+'Observações: '+$('fo').value.trim():'');
+ $('send').href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg);}
+function draw(){var k=Object.keys(cart),n=0,t=0;k.forEach(function(x){n+=cart[x].q;t+=cart[x].q*cart[x].p});
+ var b=$('cartbar');b.style.display=(n&&!editing())?'flex':'none';$('cn').textContent=n+(n>1?' itens':' item');$('ct').textContent='Ver pedido · '+money(t);
+ $('tt').textContent=money(t);
+ $('lines').innerHTML=k.map(function(x){return '<div class="ln"><span class="n">'+x.replace(/</g,'&lt;')+'<br><small style="color:#6b6762">'+money(cart[x].p)+'</small></span><span class="q"><button data-m="'+x.replace(/"/g,'&quot;')+'" data-d="-1">−</button><b>'+cart[x].q+'</b><button data-m="'+x.replace(/"/g,'&quot;')+'" data-d="1">+</button></span></div>'}).join('');
+ build();}
+document.addEventListener('click',function(e){
+ if(editing())return;
+ var a=e.target.closest('.add');
+ if(a){var it=a.closest('.mi'),n=it.querySelector('.mi-n').textContent.trim(),p=parse(it.querySelector('.mi-p').textContent);cart[n]=cart[n]||{p:p,q:0};cart[n].q++;cart[n].p=p;a.classList.add('ok');setTimeout(function(){a.classList.remove('ok')},300);draw();return}
+ if(e.target.closest('#cartbar')){$('sheet').classList.add('on');return}
+ if(e.target.id==='sx'||e.target.id==='sheet'){$('sheet').classList.remove('on');return}
+ var sg=e.target.closest('#seg button');if(sg){tipo=sg.getAttribute('data-t');[].forEach.call(document.querySelectorAll('#seg button'),function(x){x.classList.toggle('on',x===sg)});$('fa').style.display=tipo==='Entrega'?'':'none';build();return}
+ if(e.target.closest('#send')){var falta=!$('fn').value.trim()?$('fn'):(tipo==='Entrega'&&!$('fe').value.trim())?$('fe'):null;if(falta){e.preventDefault();falta.style.borderColor='#dc2626';falta.focus();return}}
+ var m=e.target.closest('[data-m]');if(m){var k=m.getAttribute('data-m');cart[k].q+=+m.getAttribute('data-d');if(cart[k].q<=0)delete cart[k];draw();if(!Object.keys(cart).length)$('sheet').classList.remove('on')}
+});
+var KEY='pedido:'+location.pathname;
+try{var sv=JSON.parse(localStorage.getItem(KEY)||'{}');if(sv.n)$('fn').value=sv.n;if(sv.e)$('fe').value=sv.e}catch(x){}
+$('sheet').addEventListener('input',function(e){e.target.style.borderColor='';build();try{localStorage.setItem(KEY,JSON.stringify({n:$('fn').value,e:$('fe').value}))}catch(x){}});
+var links=[].slice.call(document.querySelectorAll('nav.cats a'));
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});[].forEach.call(document.querySelectorAll('section.cat'),function(s){io.observe(s)})}
+})();
+</script>
+</body></html>
